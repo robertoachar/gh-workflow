@@ -1,6 +1,0 @@
-name: Run lint
-
-jobs:
-  lint:
-    steps:
-      - run: yarn lint

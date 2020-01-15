@@ -1,4 +1,4 @@
-name: Run Workflow
+name: Run tests
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  workflow:
+  jest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -14,6 +14,4 @@ jobs:
         with:
           node-version: 12
       - run: yarn install
-      - uses: ./.github/actions/lint
-      - uses: ./.github/actions/jest
-      - run: echo 'MF'
+      - run: yarn jest

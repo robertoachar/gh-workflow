@@ -16,4 +16,4 @@ jobs:
       - run: yarn install
       - uses: ./.github/actions/lint
       - uses: ./.github/actions/jest
-      - run: echo 'MF'
+      - uses: ./.github/actions/test

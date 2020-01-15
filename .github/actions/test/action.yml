@@ -1,0 +1,5 @@
+name: "Run Tests"
+description: "Run action throught JavaScript"
+runs:
+  using: "node12"
+  image: "action.js"

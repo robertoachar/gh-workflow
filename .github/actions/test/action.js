@@ -1,3 +1,5 @@
-import { exec } from "@actions/exec";
+const { exec } = require('@actions/exec');
 
-await exec('yarn test');
+(async () => {
+  await exec('yarn test');
+})();

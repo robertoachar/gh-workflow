@@ -14,6 +14,7 @@ jobs:
         with:
           node-version: 12.14.1
       - run: yarn install
-      - uses: ./.github/actions/lint
+      - name: Run lint
+        uses: ./.github/actions/lint
       - uses: ./.github/actions/jest
       - uses: ./.github/actions/test

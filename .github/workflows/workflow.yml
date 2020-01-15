@@ -14,6 +14,6 @@ jobs:
         with:
           node-version: 12
       - run: yarn install
-      - uses: .github/workflows/lint
-      - uses: .github/workflows/jest
+      - uses: ./.github/workflows/lint
+      - uses: ./.github/workflows/jest
       - run: echo 'MF'

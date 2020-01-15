@@ -1,1 +1,5 @@
-run: yarn lint
+name: "Jest"
+description: "Run Jest"
+runs:
+  using: "docker"
+  image: "Dockerfile"

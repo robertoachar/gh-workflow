@@ -15,4 +15,5 @@ jobs:
           node-version: 12.14.1
       - run: yarn install
       - uses: ./.github/actions/lint
+      - uses: ./.github/actions/jest
       - run: echo 'MF'
